@@ -22,6 +22,7 @@ import { useState } from "react";
 export default function UseStateTest(){
     const [num, setNum] = useState(1);
     const [inputNum, setInputNum] = useState(1);
+    const [count, setCount] = useState(0);
 
     function changeNum(event){
         setInputNum(parseInt(event.target.value));
@@ -29,13 +30,16 @@ export default function UseStateTest(){
 
     function addNum(){
         setNum(num+inputNum);
+        setCount(count+1);
     }
     function MinusNum(){
         setNum(num-inputNum);
+        setCount(count+1);
     }
 
+
     return(
-        <>
+        <div className="counter">
             <div>
                 <button className="w-85" onClick={addNum}>+</button>
                 <button className="w-85" onClick={MinusNum}>-</button>
@@ -43,6 +47,7 @@ export default function UseStateTest(){
             <input type="text" value={num}/>
             <input type="text" placeholder="증감시킬 값을 입력" onChange={changeNum}/>
             {/* <input type="text" value={inputNum} onChange={(ev)=>setInputNum(ev.target.value)}/> */}
-        </>
+            <p>누른 횟수 : {count}</p>
+        </div>
     );
 }

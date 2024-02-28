@@ -8,5 +8,13 @@
 
 .w-85{
     width: 85px;
-    margin: 1px;
+    height: 50px;
+    margin: 2px;
+    margin-bottom: 10px;
+}
+
+.counter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
