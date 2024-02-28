@@ -1,0 +1,12 @@
+#error-page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.w-85{
+    width: 85px;
+    margin: 1px;
+}
