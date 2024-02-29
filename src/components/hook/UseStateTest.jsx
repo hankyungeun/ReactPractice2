@@ -32,22 +32,49 @@ export default function UseStateTest(){
         setNum(num+inputNum);
         setCount(count+1);
     }
-    function MinusNum(){
+    function minusNum(){
         setNum(num-inputNum);
         setCount(count+1);
     }
 
 
     return(
-        <div className="counter">
+        <div className="center">
             <div>
-                <button className="w-85" onClick={addNum}>+</button>
-                <button className="w-85" onClick={MinusNum}>-</button>
+                <button className="w-85" onClick={()=>addNum()}>+</button>
+                <button className="w-85" onClick={minusNum}>-</button>
             </div>
             <input type="text" value={num}/>
             <input type="text" placeholder="증감시킬 값을 입력" onChange={changeNum}/>
-            {/* <input type="text" value={inputNum} onChange={(ev)=>setInputNum(ev.target.value)}/> */}
             <p>누른 횟수 : {count}</p>
         </div>
     );
 }
+
+// import React, { useState } from 'react';
+
+// export default function UseStateTest() {
+//     const [number, setNumber] = useState(1);
+//     const [num2, setNum2] = useState(0);
+
+//     function addNumber() {
+//         setNumber(number+num2);
+//     }
+
+//     function minusNumber() {
+//         setNumber(number-num2);
+//     }
+
+//     return(
+//         <div class="center">
+//             <div>
+//                 <button className="w-85 m-1 btn-s1" onClick={()=>addNumber()}>+</button>
+//                 <button className="w-85 m-1 btn-s1" onClick={minusNumber}>-</button>
+//             </div>
+//             <input type="text" value={number} /><br/>
+//             <input type="text" defaultValue={num2} 
+//                    onChange={(ev)=>{ setNum2(Number(ev.target.value));}} 
+//                    placeholder='증감시킬 값을 입력' />
+//         </div>
+//     );
+// }
