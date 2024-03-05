@@ -32,19 +32,19 @@ function Layout(){
                     <a href={"/hook/state"}>상태 관련 Hook (useState)</a>
                 </li>
                 <li>
-                    <a href={"/hook/effect"}>랜더링 시점 관련 Hook (userEffect)</a>
+                    <a href={"/hook/effect"}>랜더링 시점 관련 Hook (useEffect)</a>
                 </li>
                 <li>
-                    <a href={"/hook/context"}>Context 관련 Hook (userContext)</a>
+                    <a href={"/hook/context"}>Context 관련 Hook (useContext)</a>
                 </li>
                 <li>
-                    <a href={"/hook/memo"}>계산 결과 캐싱 관련 Hook (userMemo)</a>
+                    <a href={"/hook/memo"}>계산 결과 캐싱 관련 Hook (useMemo)</a>
                 </li>
                 <li>
-                    <a href={"/hook/callback"}>함수 캐싱 관련 Hook (userCallback)</a>
+                    <a href={"/hook/callback"}>함수 캐싱 관련 Hook (useCallback)</a>
                 </li>
                 <li>
-                    <a href={"/hook/dom"}>특정 DOM 접근 관련 Hook (userRef)</a>
+                    <a href={"/hook/dom"}>특정 DOM 접근 관련 Hook (useRef)</a>
                 </li>
             </ul>
         </nav>
